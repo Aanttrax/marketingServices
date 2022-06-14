@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgba(2, 0, 6, 0.976);
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px 30px 50px;
+    
+}
+
+nav .menu ul{
+    display: flex;
+}
+
+nav .menu ul li {
+    padding: 0 20px 0 20px;
+    list-style: none;
+}
+
+nav .menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.background{
+    overflow: hidden;
+}
+.background video{
+    width: 100%;
+}
+
+.section_title {
+    position: relative;
+    top:-350px;
+    z-index: 1;
+}
+.section_title .title {
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    color: aliceblue;
+    left: 25%;
+}
+.section_title .title h1{
+    font-size: 60px;
+}
+.section_title .title p{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.focus{
+    color:black;
+    text-align: center;
+    font-size: 40px;
+}
+.focus p{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -300px;
+}
+.benefits{
+display: flex;
+justify-content: center;
+background-color: azure;
+margin-top: 50px;
+}
+.benefits .benefits_data .video{
+    position: relative;
+    animation-name: slideimg;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideimg {
+    from{right: 200px;}
+    to{right: 0px;}
+}
+.benefits .benefits_data{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.benefits .benefits_data .data{
+    width: 600px;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+}
+@keyframes slide {
+    from {left: 200px;}
+    to {left: 0px;}
+}
+.benefits .benefits_data .data h2{
+    font-size: 25px;
+}
+.benefits .benefits_data .data p{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+.flow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 120px;
+}
+.flow .flow_boxes{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 400px;
+    width: 25%;
+    z-index: 4;
+}
+.flow .flow_boxes img{
+    height: 100%;
+}
+.flow .flow_boxes .btn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+.flow .flow_boxes .btn a{
+    text-decoration: none;
+    border: 2.5px solid white;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+}
+.flow .flow_boxes .btn:hover{
+    background-color: rgba(249, 249, 249, 0.7);
+}
+.flow .flow_boxes .btn a:hover{
+    background-color: white;
+    color: black;
+}
+.section_info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    width: 100%;
+    height: 500px;
+    width: 85%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.info .info_img {
+    overflow: hidden;
+    position: relative;
+    animation-name: slideimg;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.info .info_img img{
+    height: 100%;
+}
+.info .info_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+.info .info_data h2{
+    font-size:30px;
+}
+.info .info_data p{
+    margin-top: 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+footer{
+    background-color: rgba(2, 0, 6, 0.976);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo_footer{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.menu_footer li a{
+    text-decoration: none;
+    padding: 30px;
+    color: white;
+}
+footer p{
+    color: white;
+    margin-bottom: 50px;
+}
+.a_footer{
+    text-decoration: none;
+    color: white;
+}
+a.a_footer:hover{
+    color: red;
+}
